@@ -1,0 +1,88 @@
+<manifest alg="2" build="10" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1420800651337">
+  <folder name="css">
+    <file name="site_global.css" crc="365011649"/>
+    <file name="master_a-__.css" crc="510417291" ref="index"/>
+    <file name="master_b-__.css" crc="418786682" ref="展望2015:年度回顾:最新事件:专题系列"/>
+    <file name="__2015.css" crc="528642410" ref="展望2015"/>
+    <file name="index.css" crc="439197038" ref="index"/>
+    <file name="____2.css" crc="3907904860" ref="年度回顾"/>
+    <file name="____1.css" crc="3826946642" ref="最新事件"/>
+    <file name="____.css" crc="3956454596" ref="专题系列"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4164521501" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="museutils.js" crc="3777594392" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="jquery.musemenu.js" crc="415733523" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="pie.js" crc="3827607177" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="jquery.watch.js" crc="4144919381" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4259541792" ref="index:专题系列:展望2015"/>
+    <file name="jquery.scrolleffects.js" crc="117544926" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+  </folder>
+  <folder name="images">
+    <file name="mavel-u76-fr.png" crc="4057169027" ref="index"/>
+    <file name="貼上的影像 262x135.png" crc="118111055" ref="index:年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="图片1.jpg" crc="4264163526" ref="index"/>
+    <file name="貼上的影像 236x13.png" crc="3846794630" ref="index:年度回顾:最新事件:专题系列"/>
+    <file name="貼上的影像 79x25.png" crc="4058126059" ref="index:最新事件:展望2015"/>
+    <file name="u1709.png" crc="3817857363" ref="index"/>
+    <file name="u1710.png" crc="3817857363" ref="index"/>
+    <file name="u1711.png" crc="3817857363" ref="index"/>
+    <file name="貼上的影像 32x32.png" crc="4069309043" ref="index"/>
+    <file name="marvel漫画-u695-fr.png" crc="3823232215" ref="index"/>
+    <file name="u1872.png" crc="3968719025" ref="index"/>
+    <file name="u1724.png" crc="4003564251" ref="index"/>
+    <file name="u1873.png" crc="3968719025" ref="index"/>
+    <file name="u1726.png" crc="4003564251" ref="index"/>
+    <file name="u1875.png" crc="3968719025" ref="index"/>
+    <file name="u1728.png" crc="4003564251" ref="index"/>
+    <file name="u1876.png" crc="3968719025" ref="index"/>
+    <file name="貼上的影像 32x322.png" crc="3867134158" ref="index"/>
+    <file name="貼上的影像 32x323.png" crc="3867134158" ref="index"/>
+    <file name="gangtou-u2008-fr.png" crc="4084053543" ref="index"/>
+    <file name="未标题-2-u1999-fr.png" crc="158217925" ref="index"/>
+    <file name="haokshou-u1583-fr.png" crc="494466264" ref="index"/>
+    <file name="小锤子-u1565-fr.png" crc="4066167548" ref="index"/>
+    <file name="mavel.jpg" crc="150917589" ref="index"/>
+    <file name="mavel2.jpg" crc="150917589" ref="年度回顾"/>
+    <file name="貼上的影像 50x50.png" crc="3967772208" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="貼上的影像 50x502.png" crc="3915649870" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="图片12.jpg" crc="4264163526" ref="年度回顾"/>
+    <file name="貼上的影像 151x151.png" crc="4186520807" ref="年度回顾"/>
+    <file name="屏幕快照 2015-01-07 下午22050.jpg" crc="3895759436" ref="年度回顾"/>
+    <file name="屏幕快照 2015-01-09 上午90855.jpg" crc="3768696986" ref="年度回顾"/>
+    <file name="满大人.jpg" crc="3765711817" ref="年度回顾"/>
+    <file name="钢铁达人.jpg" crc="464592721" ref="年度回顾"/>
+    <file name="貼上的影像 496x529.png" crc="28421884" ref="年度回顾"/>
+    <file name="貼上的影像 172x172.png" crc="364186354" ref="年度回顾"/>
+    <file name="8139d041d65c194a28a7b4d126568dc6.jpg" crc="3974271194" ref="年度回顾"/>
+    <file name="貼上的影像 32x324.png" crc="4143792833" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="貼上的影像 32x325.png" crc="176731086" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="貼上的影像 32x326.png" crc="41712200" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="貼上的影像 32x327.png" crc="124210707" ref="年度回顾:最新事件:专题系列:展望2015"/>
+    <file name="貼上的影像 150x256.png" crc="3916406156" ref="专题系列"/>
+    <file name="屏幕快照 2015-01-09 下午25108-u2565-fr.png" crc="4203125609" ref="专题系列"/>
+    <file name="地图最忙碌.jpg" crc="4040463907" ref="专题系列"/>
+    <file name="令狐家族.jpg" crc="4146294414" ref="专题系列"/>
+    <file name="貼上的影像 23x23.png" crc="3765427297" ref="展望2015"/>
+    <file name="貼上的影像 50x503.png" crc="4253761974" ref="展望2015"/>
+    <file name="貼上的影像 195x120.png" crc="23610726" ref="展望2015"/>
+    <file name="貼上的影像 90x143.png" crc="3860217482" ref="展望2015"/>
+    <file name="貼上的影像 151x1512.png" crc="4186520807" ref="展望2015"/>
+    <file name="貼上的影像 172x1722.png" crc="364186354" ref="展望2015"/>
+    <file name="貼上的影像 726x706.png" crc="321647668" ref="展望2015"/>
+    <file name="貼上的影像 244x98.png" crc="3447602" ref="展望2015"/>
+    <file name="小锤子-u2267-fr.png" crc="4210786470" ref="展望2015"/>
+    <file name="haokshou-u2265-fr.png" crc="4186748859" ref="展望2015"/>
+    <file name="貼上的影像 736x920.jpg" crc="324006317" ref="展望2015"/>
+    <file name="貼上的影像 515x716.png" crc="4200579972" ref="展望2015"/>
+    <file name="貼上的影像 300x300.png" crc="333441635" ref="展望2015"/>
+    <file name="貼上的影像 219x285.png" crc="4229019642" ref="展望2015"/>
+    <file name="貼上的影像 496x5292.png" crc="28421884" ref="展望2015"/>
+  </folder>
+  <file name="index.html" crc="227114104" mt="1420798580377" redirect="true"/>
+  <file name="年度回顾.html" crc="494943007" mt="1420800647701" redirect="true"/>
+  <file name="最新事件.html" crc="3804142581" mt="1420792729889" redirect="true"/>
+  <file name="专题系列.html" crc="3798032993" mt="1420800592254" redirect="true"/>
+  <file name="展望2015.html" crc="219216596" mt="1420792528232" redirect="true"/>
+</manifest>
