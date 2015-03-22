@@ -1,0 +1,974 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8"/>
+		<title>Ballon d'Or</title>
+		<!--load icon -->
+		<link rel="shortcut icon" href="./images/favicon.ico">
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		
+		 <script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		
+		 <!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----font-Awesome----->
+   		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+   		<!----font-Awesome----->
+		<!----webfonts---->
+<!-- 
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,200,700,800,900' rel='stylesheet' type='text/css'>
+ -->
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+		<!-- Loading Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+    <link href="./css/flat-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!--tooltip loading -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/flat-ui.min.js"></script>
+    <!--load tooltip-->
+    <script>
+      $(function () {
+      $('[data-toggle=tooltip]').tooltip();
+      });
+    </script>
+    <!-- loading chart.js-->
+    <script src="./js/Chart.js"></script>
+     <script src="./js/echarts-plain-map.js"></script>
+     <script src="./js/blue.js" async=""></script>
+     <link rel="stylesheet" type="text/css" href="css/198zone.css" media="all">
+    </head>
+	<body>
+		<!--start-container-->
+		<!-----start-slider---->
+		<div class="slider">
+			<script src="js/responsiveslides.min.js"></script>
+			  <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 3
+			      $("#slider3").responsiveSlides({
+			        manualControls: '#slider3-pager',
+			      });
+			    });
+			  </script>
+			  	<!-- Slideshow -->
+			    <ul class="rslides" id="slider3">
+			      <li>
+			      	<img src="images/slider-img1.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>What do you know?</h1>
+			      		<p>let us show you in an interesting way!</p>
+			      		<!-- <a class="slid-btn" href="#">Read More</a> -->
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img3.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>Who is the winner?</h1>
+			      		<p>Based on big data, we can make a forecasting!</p>
+			      		<!-- <a class="slid-btn" href="#">Read More</a> -->
+			      	</div>
+			      </li>
+			      <li><img src="images/slider-img2.jpg" alt="">
+			      	<div class="slid-info">
+			      		<h1>We are looking for...</h1>
+			      		<p>Who is the shiniest star in Zurich?</p>
+			      		<!-- <a class="slid-btn" href="#">Read More</a> -->
+			      	</div>
+			      </li>
+			    </ul>
+			    <!-- Slideshow -->
+			    <ul id="slider3-pager">
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			      <li><a href="#"><span> </span></a></li>
+			    </ul>
+		   </div>
+		<!-----//End-slider---->
+		<!----start-header---->
+		<div id="home" class="header scroll">
+			<div class="container">
+				<!---- start-logo---->
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" title="Golden ball"/></a>
+				</div>
+				<!---- //End-logo---->
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Hello!</a></li>
+                         <li class="page-scroll"><a href="#about" class="scroll">Lead in</a></li>
+						<li class="page-scroll"><a href="#port" class="scroll">Winner</a></li>
+					    <li class="page-scroll"><a href="#data" class="scroll">Analysis</a></li>
+                        <li class="page-scroll"><a href="#blog" class="scroll">B-Data</a></li>
+<!-- 
+						<li class="page-scroll"><a href="#team" class="scroll">Team</a></li>
+ -->
+<!-- 
+						<li class="page-scroll"><a href="#contact" class="scroll">Contact</a></li>
+ -->
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<!----//End-top-nav---->
+			</div>
+		</div>
+		<!----//End-header---->
+		<!----start-about----->
+		<div id="about" class="about">
+			<div class="container">
+				<h2>Lead in...</h2>
+				<p class="wellcome-note-head">    Nearly every year after the <span>FIFA Ballon d'Or award ceremony</span>, <br>the<a title="After 2014 Ballon d'Or award ceremony, <Diario Sport> reported that voting results of 10 coaches have been 'strangely' tampered, and the more ironic thing is that 2 coaches have been ignored by FIFA.
+In 2013, Jos Mourinho complained that he and Ronaldo were treated unfairly by FIFA because some coaches called and told him they had voted for him but at last these votes appeared under other candidates' names. And he thought Ronaldo is much more qualified than Messi for the Ballon d'Or.
+After Messi was awarded FIFA Ballon d'Or in 2010, many people wondered why he deserved it because he was not as outstanding as his competitors in that year.
+" data-toggle="tooltip" href="#"> <span>shady deal </span></a> will be reported.</br></p>
+				<p class="wellcome-note-info">After 2014 <a>Ballon d'Or award ceremony</a>,it reported that <a>voting results</a> of 10 coaches have been 'strangely' tampered, and the more ironic thing is that 2 coaches have been ignored by <a>FIFA</a>.
+<br>In 2013,<a>Jose Mourinho</a> complained that he and Ronaldo were treated unfairly by FIFA because some coaches called and told him they had voted for him but at last these votes appeared under other candidates' names. And he thought Ronaldo is much more qualified than Messi for the <a>Ballon d'Or</a>.
+<br>After Messi was awarded <a>FIFA Ballon d'Or</a> in 2010, many people wondered why he deserved it because he was not as <a>outstanding</a> as his competitors in that year.</br>
+</p>
+			<!----start-about-grids----->
+			<div class="about-grids">
+				<div class="col-md-3 about-grid">
+					<span class="about-icon"> </span>
+					<h3><a href="#">Host city</a></h3>
+					<p>Since 2011, the FIFA Ballon d’Or award ceremony began to be hosted in Zurich which is the largest city in Switzerland and the capital of the canton of Zurich, and it is said that the corporation between the city and FIFA will last at least 5 years. </p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon1"> </span>
+					<h3><a href="#"> News!</a></h3>
+					<p> Barça announced they will put the freeze on FIFA and they will not be sending representatives to support Lionel Messi at this year’s award ceremony for the 2014 FIFA Ballon d’Or.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon2"> </span>
+					<h3><a href="#">FIFA</a></h3>
+					<p>FIFA was founded in 1904, then moved the headquarters to Zürich in 1932. Membership now comprises 209 national associations. The current president of FIFA is Sepp Blatter who was re-elected in 2011.</p>
+				</div>
+				<div class="col-md-3 about-grid">
+					<span class="about-icon3"> </span>
+					<h3><a href="#">Result</a></h3>
+					<p>  We’re waiting…</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			<!----//End-about-grids----->
+		</div>
+		<!----//End-about----->
+        <!----start-portfolio----->
+		<div id="port" class="portfolio portfolio-box">
+			<div class="container">
+				<h3>Winners Exhibition<label> </label></h3>
+			<!----start-portfolio---->
+         <div id="port" class="container portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							// Run the show!
+							filterList.init();
+						});	
+					</script>
+					<!----//End-portfolio-script----->
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span> /</li>
+						<li><span class="filter" data-filter="app">60's~80's</span> /</li>
+						<li><span class="filter" data-filter="card">80's~00's</span> /</li>
+						<li><span class="filter" data-filter="icon">00's~now</span> /</li>
+						<!-- <li><span class="filter" data-filter="app">PRINT</span></li> -->
+
+					</ul>
+ <script>
+$(document).ready(function(){
+    // 0.4代表遮罩的透明度
+	$('.banner div').css('opacity',0.2);
+    $('.banner').hover(function(){
+        var el = $(this);
+		// 先淡出阴影，后淡入文字
+		el.find('div').stop().animate({width:400,height:400},'slow',function(){
+        el.find('p').fadeIn('fast');
+		});
+        },function(){
+        var el = $(this);
+		// 隐藏文字
+		el.find('p').stop(true,true).hide();
+		// 去掉遮罩
+		el.find('div').stop().animate({width:60,height:60},'fast');
+        }).click(function(){
+		// 点击图片时打开链接
+		window.open($(this).find('img').attr('src'));
+		});
+        });
+</script>
+
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/7.jpg" />
+						<p class="companyInfo">1970 European Footballer of the Year</br>
+	1970 European top scorer</br>
+	1970 Bundesliga Top scorer</br>
+	1970 World Cup top scorer</br>
+</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> MULLER</a></h4>
+		                	<span>Germany</span>
+		                </div>
+					</div>		
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/5.jpg" />
+						<p class="companyInfo">
+						2008 PFA Premier League Team of the Year</br>
+	2008 2013 World Soccer Player of the Year</br>
+	2008 2013 UEFA Team of the Year </br>
+2008 2013 European Golden Shoe</br>
+	2013 UEFA Champions League top scorer</br>
+	2013 UEFA Best Player in Europe Award</br>
+
+						</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> C-RONALDO</a></h4>
+		                	<span>Spain</span>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/4.jpg" />
+						<p class="companyInfo">1976 UEFA Euro Team of the Tournament</br>
+	1976 German Footballer of the Year</br>
+	1976 World Soccer Magazine Player of the Year</br>
+</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> BECKENBAUER</a></h4>
+		                	<span>Germany</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/2.jpg" />
+						<p class="companyInfo">
+						1985 Onze d'Or</br>
+	1985 World Soccer Player of the Year</br>
+	1985 Capocannoniere (Serie A Top Scorer)</br>
+	1985 European Cup Top Scorer</br>
+
+						</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">PLATINI</a></h4>
+		                	<span>France</span>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/6.jpg" />
+						<p class="companyInfo">
+						2009 PFA Premier League Team of the Year</br>
+	2009 2011 2012 World Soccer Player of the Year</br>
+	2010 2012 European Golden Shoe</br>
+	2009 2011 FIFA Club World Cup Golden Ball</br>
+	2009 2010 2011 2012 UEFA Champions League Top Goalscorer</br>
+	2009 2010 2011 2012 LFP Best Forward</br>
+
+						</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> MESSI</a></h4>
+		                	<span>Argentina</span>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/8.jpg" />
+						<p class="companyInfo">1998 ESM Team of the Year</br>
+	1998 UEFA Club Midfielder of the Year</br>
+	1998 FIFA World Cup All-Star Team</br>
+	1998 FIFA World Cup Final Man of the Match</br>
+	1998 World Soccer Awards Player of the Year</br>
+	1998 Onze d'Or</br>
+	
+</p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#">ZIDANE</a></h4>
+		                	<span>France</span>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<div class="banner">
+					    <img class="p-img" src="images/3.jpg" />
+						<p class="companyInfo">
+						 1992 Onze d'Argent
+	                    <br>1992 World Soccer Player of the Year
+                        <br>1992 UEFA European Football Championship Teams of the Tournament
+	                    <br>1992 UEFA Best Player of the Year
+	                    <br>1992 Serie A Top Scorer
+	                    <br>1992 FIFA World Player of the Year
+                        </p>
+                        <div class="cornerTL"></div>
+                        <div class="cornerTR"></div>
+                        <div class="cornerBL"></div>
+                        <div class="cornerBR"></div>
+                        </div>
+		                </div>
+		                 <div class="port-info">
+		                	<h4><a href="#"> VAN BASTEN</a></h4>
+		                	<span>HOLLAND</span>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!-----start-analysis---->
+         <div class="testmonials" id="data">
+          <div class="container">
+          <div class="client-pic col-md-4">
+	         		<img src="images/client.png"/>
+	         	</div>
+	         	<div class="client-sys col-md-8">
+	         
+	         		<!----start-testmonial-slider---->
+	         		<link rel="stylesheet" href="css/testmonial.css">
+  					<script src="js/prefixfree.min.js"></script>
+	         		<!----//End-testmonial-slider---->
+	         		<div class="gallery autoplay items-3">
+					    <div id="item-1" class="control-operator"></div>
+					    <div id="item-2" class="control-operator"></div>
+					    <div id="item-3" class="control-operator"></div>
+					    <figure class="item">
+					      <h1>Analysis</h1>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span>In this part,we will analyze the great football player,Messi and C-Ronaldo.And we will use the diagram to compare who is more excellent.<span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h1>C-Ronaldo</h1>
+					     <p class="client-says"><span class="left-quit"> &#8220;</span> C-Ronaldo,at the end of the 2014,he had had <strong>149</strong> professional football match,<strong>250</strong> goals,<strong>83</strong> assistance in the club.And the total number is:<strong>540</strong> matches,<strong>345</strong> goals,<strong>105</strong> assistance.<span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <figure class="item">
+					      <h1>Messi</h1>
+					      <p class="client-says"><span class="left-quit"> &#8220;</span> Messi,at the end of the 2014,he had had <strong>277</strong> professional football match,<strong>253</strong> goals,<strong>94</strong> assistance in the club.And the total number is:<strong>417</strong> matches,<strong>351</strong> goals,<strong>132</strong> assistance. <span class="right-quit"> &#8221;</span></p>
+					    </figure>
+					    <div class="clearfix"> </div>
+					    <div class="controls">
+					      <a href="#item-1" class="control-button"><span> </span></a>
+					      <a href="#item-2" class="control-button"><span> </span></a>
+					      <a href="#item-3" class="control-button"><span> </span></a>
+					    </div>
+					    <div class="clearfix"> </div>
+				  </div>
+	         	</div>
+	         	<div class="clearfix"> </div>
+         	 </div>
+         </div>
+          <!-----//End-testmonials---->
+		  <!-----start-info----->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-members text-center">
+					<div class="col-md-4 team-member"  >
+				      <canvas id="canvas" ></canvas>
+				    <script>
+	var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+	var barChartData = {
+		labels : ["Goal","Assistance","Match"],
+		datasets : [
+			{
+				fillColor : "rgba(135,206,250,0.5)",
+				strokeColor : "rgba(135,206,250,0.8)",
+				highlightFill: "rgba(135,206,250,0.75)",
+				highlightStroke: "rgba(135,206,250,1)",
+				data : [61,19,60]
+			},
+			{
+				fillColor : "rgba(255,127,80,0.5)",
+				strokeColor : "rgba(255,127,80,0.8)",
+				highlightFill : "rgba(255,127,80,0.75)",
+				highlightStroke : "rgba(255,127,80,1)",
+				data : [58,24,66]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+    </script>
+				     
+                     <h3><a href="#">Basic  Data </a></h3>
+						<span>The gray is CR,the blue is M,2014</span>
+						<p>From the diagram,we can see that C-Ronaldo and Messi are excellent.And the basic data is quite same,we analyze the goals,assistance and the matches they have played.</p>
+						<!-- 
+<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+ -->
+					</div>
+					<div class="col-md-4 team-member" id="c"  style="height:200px;  width:360px;  ">
+					 
+<script type="text/javascript">
+/* the scatter */ 
+     var myChart = echarts.init(document.getElementById('c'));
+     var option = {
+    
+    tooltip : {
+        trigger: 'axis'
+    },
+    toolbox: {
+        show : false,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    polar : [
+       {
+           indicator : [
+               { text: 'PAC', max: 100},
+               { text: 'DRI', max: 100},
+               { text: 'SHO', max: 100},
+               { text: 'DEF', max: 100},
+               { text: 'PAS', max: 100},
+               { text: 'HEA', max: 100}
+            ]
+        }
+    ],
+    calculable : true,
+    series : [
+        {
+            name: 'CR VS M',
+            type: 'radar',
+            data : [
+                {
+                    value : [93, 91, 90, 48, 79, 86],
+                    name : 'CR'
+                },
+                 {
+                    value : [92, 96, 89, 44, 84, 69],
+                    name : 'M'
+                }
+            ]
+        }
+    ]
+};
+                    
+myChart.setOption(option);
+ </script>
+	                <h3><a href="#">Competence</a></h3>
+						<span>CR refer to C-Ronaldo,M refer to Messi</span>
+						<p>We use the numbers to analyze their competencies referring to their performances in the club and countries.PAC=Pace SHO=Shot PAS=Pass DRI=Dribbling DEF=Defend HEA=Heading.
+</p>
+						<!-- 
+<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+ -->
+					</div>
+					<div class="col-md-4 team-member" id="d" style="height: 200px; width:400px;" >
+					<!--the chart -->
+					<script>
+					     var myChart = echarts.init(document.getElementById('d'));
+                         var option = {
+   
+    tooltip : {
+        trigger: 'axis'
+    },
+   calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['08','09','10','11','12','13','14']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'CR',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[31, 18, 26, 40, 46, 34, 31]
+        },
+        {
+            name:'M',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[10, 23, 34, 31, 50, 46, 28]
+        },
+    ]
+};
+           myChart.setOption(option);
+              </script>      
+					<!--//End of the chart -->
+						 
+						<h3 ><a href="#" >History</a></h3>
+						<span>Blue refer to CR,orange refer to Messi.</span>
+						<p> This chart reflect the history goals of Messi and C-Ronaldo in their career.From this chart we can see that Messi is more stable.</p>
+						<!-- 
+<ul class="list-unstyled list-inline social-icons">
+							<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"> </i> </a></li>
+						</ul>
+ -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-----//End-team----->
+		<!--//End Analaysis -->
+		<!----start-brand-carsuals---->
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<div class="brand-carsuals">
+			<ul id="flexiselDemo3">
+			    <li><img src="images/a.png" /></li>
+			    <li><img src="images/b.png" /></li>
+			    <li><img src="images/c.png" /></li>
+			    <li><img src="images/d.png" /></li>
+			    <li><img src="images/e.png" /></li>                                                 
+			    <li><img src="images/f.png" /></li> 
+			    <li><img src="images/h.png" /></li>                                                 
+			    <li><img src="images/i.png" /></li>                                                 
+			    <li><img src="images/j.png" /></li>                                                 
+			    <li><img src="images/k.png" /></li>                                                 
+             </ul>   
+			<script type="text/javascript">
+				$(window).load(function() {
+				    $("#flexiselDemo3").flexisel({
+				        visibleItems: 5,
+				        animationSpeed: 1000,
+				        autoPlay: true,
+				        autoPlaySpeed: 3000,            
+				        pauseOnHover: true,
+				        enableResponsiveBreakpoints: true,
+				        responsiveBreakpoints: { 
+				            portrait: { 
+				                changePoint:480,
+				                visibleItems: 1
+				            }, 
+				            landscape: { 
+				                changePoint:640,
+				                visibleItems: 2
+				            },
+				            tablet: { 
+				                changePoint:768,
+				                visibleItems: 3
+				            }
+				        }
+				    });
+				    
+				});
+			</script>
+		</div>
+		<!-----//End-brand-carsuals------>
+		<!---start-blog---->
+		<div id="blog" class="blog">
+			<div class="container">
+				<h3>B-Data <p>Who ranked the top three,see it from the <a>following charts:</a></p></h3>
+				
+				<div class="blog-grids" id="n" style="height:450px;width:1100px; " bgcolor=#05A4C2;>
+						 <script type="text/javascript">
+/* the scatter */ 
+var myChart = echarts.init(document.getElementById('n'));
+ var idx = 1;
+ var option = {
+    timeline : {
+    data : [
+            '2007', '2008', '2009', '2010', '2011','2012','2013'
+           ],
+        label : {
+            formatter : function( s ) {
+                return s.slice(0,7);
+            }
+        }
+    },
+    options : [
+        {
+            title : {
+                text: 'Vote Result of ballon dor award',
+                subtext: '2007-2013,just click!'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c}({d}%)"
+            },
+            
+                      series : [
+                {
+                    name:'Vote Result(2007)',
+                    type:'pie',
+                    center: ['50%', '45%'],
+                    radius: '50%',
+                    data:[
+                        {value: 444 ,  name:'Kaka'},
+                        {value: 277 ,  name:'C-Ronaldo'},
+                        {value: 255 ,  name:'Messi'}
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2008)',
+                    type:'pie',
+                    data:[
+                        {value: 446 ,  name:'C-Ronaldo'},
+                        {value: 281 ,  name:'Messi'},
+                        {value: 179 ,  name:'Torres'}
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2009)',
+                    type:'pie',
+                    data:[
+                       	{value: 473 ,  name:'Messi'},
+                        {value: 233 ,  name:'C-Ronaldo'},
+                        {value: 170 ,  name:'Xavi'}
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2010)',
+                    type:'pie',
+                    data:[
+                        {value: 22.65 ,  name:'Messi'},
+                        {value: 17.36 ,  name:'Lniesta'},
+                        {value: 16.48 ,  name:'Xavi'}
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2011)',
+                    type:'pie',
+                    data:[
+                    	{value: 44.78,  name:'Messi'},
+                        {value: 21.60,  name:'C-Ronaldo'},
+                        {value: 9.23,  name:'Xavi'}	
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2012)',
+                    type:'pie',
+                    data:[
+                        {value: 41.60 ,  name:'Messi'},
+                        {value: 23.68 ,  name:'C-Ronaldo'},
+                        {value: 10.91 ,  name:'Lniesta'}
+                    ]
+                }
+            ]
+        },
+        {
+            series : [
+                {
+                    name:'Vote Result(2013)',
+                    type:'pie',
+                    data:[
+                        {value: 1365 ,  name:'C-Ronaldo'},
+                        {value: 1205 ,  name:'Messi'},
+                        {value: 1127 ,  name:'Ribery'}
+                    ]
+                }
+            ]
+        },
+    ]
+};
+
+                    
+myChart.setOption(option);
+ </script>
+ </div>
+				<div class="blog-grids">
+					<div class="col-md-4 blog-grid-row frist-row">
+					<a class="post-pic" href="#"><img src="images/post-pic.jpg" title="pic-name" /></a>
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head">
+								<div class="post-head-left">
+									<h4> Rules </h4>
+									<!-- <p class="author">By Amine Fessi </p> -->
+								</div>
+								<!-- 
+<div class="post-head-right">
+									<!~~ <span></span> ~~>
+								</div>
+ -->
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">After 2014 Ballon d'Or award ceremony, <Diario Sport> reported that voting results of 10 coaches have been 'strangely' tampered, and the more ironic thing is that 2 coaches have been ignored by FIFA.
+In 2013, Jose Mourinho complained that he and Ronaldo were treated unfairly by FIFA because some coaches called and told him they had voted for him but at last these votes appeared under other candidates' names. And he thought Ronaldo is much more qualified than Messi for the Ballon d'Or.
+After Messi was awarded FIFA Ballon d'Or in 2010, many people wondered why he deserved it because he was not as outstanding as his competitors in that year.
+</p>
+							<div class="post-bottom">
+								<!-- 
+<div class="post-bottom-left">
+									<p><a href="#">10 Comments</a> | <i class="fa fa-heart"> </i> 151</p>
+								</div>
+ -->
+								<!-- 
+<div class="post-bottom-right">
+									<a class="artbtn" href="#">Read More</a>
+								</div>
+ -->
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Considerate Standards</a></h4>
+									<!-- <p class="author">By <a href="#"> Amine Fessi</a></p> -->
+								</div>
+								<!-- 
+<div class="post-head-right post-head-right-C">
+									<span>20</span>
+								</div>
+ -->
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text"> By analyzing the voting results from 2007 to 2013, we can learn that the most important influences are the honors of the player himself, his football club and national team, among these, the personal honors take up the most proportion, then the football club, finally the national team. In the World Cup year, the performance of the national team is a consideration, however, in recent years, it has gradually lost its influences as it used had with changes of voting rules. Besides, the team role player plays is also a considerate factor.</p>
+							<div class="post-bottom">
+							<div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4> Lionel Messi</h4>
+									<!-- <p class="author">By Amine Fessi </p> -->
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>10#</span>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						   <p class="post-text">Another great possibility is Lionel Messi, who has been the top 3 of Ballon d'Or for 8 years. This year, he became the all-time top scorer in La Liga, and the all-time leading goalscorer in the UEFA Champions League. In the Brazil World Cup, he helped his national team Argentina struggled into the finals and got the Runner-up, which is the greatest achievement since 1990. At the conclusion of the World Cup final, Messi was awarded the Golden Ball, and was named in the FIFA World Cup All-Star Team. Similarly, there is also a regret for Messi, his club team didn't get any champions this year which made him less competitive than Ronaldo.</p>
+
+							<div class="post-bottom">
+						   <div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+					<!---->
+					<div class="col-md-4 artical-row2">
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#">Cristiano Ronaldo</a></h4>
+									<!-- <p class="author">By <a href="#"> Amine Fessi</a></p> -->
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>7#</span>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text"> The last year's winner Cristiano Ronaldo is considered to be the most possible one to receive 2014 Ballon d'Or. This year, he almost won all of individual awards in Europe, broke the single season goals scored record of UEFA Champions League, and his club, Real Madrid, has won champions of UEFA Champions League and the European Cup. Besides, he helped the team won the champion of Copa del Rey in Spain. The only regret this year was that in the Brazil World Cup, the Portugal national team fail to qualify for the finals.</p>
+
+							<div class="post-bottom">
+						 <div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+						<!----start-artical-info---->
+						<div class="artical-info">
+							<div class="post-head post-head1">
+								<div class="post-head-left">
+									<h4><a href="#"> Manuel Neuer</a></h4>
+									<!-- <p class="author">By <a href="#"> Amine Fessi</a></p> -->
+								</div>
+								<div class="post-head-right post-head-right-C">
+									<span>1#</span>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<p class="post-text">The last candidate is Manuel Neuer, who is one of the hottest football players in recent years. His club team Bayern Munich won the champions of Bundesliga and DFB-Pokal. His national team got the champion of Brazil World Cup and he himself got FIFA World Cup Golden Glove due to his wonderful performance. However, Neuer now cannot make the same contributions as Ronaldo and Messi do to the whole team. And his role as a goalkeeper in the team is also a limit since there is only one goalkeeper received Ballon d'Or in the history and it happened in 1963. Compared with Ronaldo and Messi, there is still a long distance for Neuer to Ballon d'Or.</p>
+							<div class="post-bottom">
+						    <div class="clearfix"> </div>
+							</div>
+						</div>
+						<!----//End-artical-info---->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!----//End-blog---->
+        <!---start-copy-right--->
+		<div class="copy-right">
+			<div class="container">
+				<p>Copyright &copy; Communication university of China</p>
+				<p>Design &nbsp;  Qichao Xing, &nbsp;Xinyi Zhang, &nbsp;Xuan Peng</p>
+					<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-copy-right--->
+		<!----//End-container------>
+
+</body>
+</html>
